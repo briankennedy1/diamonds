@@ -1,5 +1,6 @@
 var $ = require('jquery');
-
+window.jQuery = $;
+require("./semantic/dist/semantic.css");
 
 $(document).ready(function() {
   $('h1').css('color','red');
