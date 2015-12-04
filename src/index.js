@@ -1,5 +1,20 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { App } from './App';
+import ReactDOM from 'react-dom';
+import LoginButton from './components/LoginButton.js';
 
-render(<App />, document.getElementById('root'));
+class Wrapper extends React.Component {
+  render() {
+    return (
+      <div className="ui container">
+        <div className="ui padded segment">
+          <LoginButton text="Login" url="" />
+        </div>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <Wrapper />,
+  document.getElementById('root')
+);
